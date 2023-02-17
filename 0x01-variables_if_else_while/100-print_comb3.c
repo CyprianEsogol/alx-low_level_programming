@@ -1,22 +1,25 @@
+
 #include <stdio.h>
 
 /**
- *main - Entry point, print 00 to 99 using putchar
+ *main - print 00 to 99 with no duplicate digits or combos: no 11, no 10 (01)
+ *
  *Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int tens;
-	int ones;
+	int n;
+	int m;
 
-	for (tens = '0'; tens <= '9'; tens++) /*increament tens*/
+	for (m = '0'; m <= '9'; m++) /*increment tens*/
 	{
-		for (ones = (tens + 1); ones <= '9'; ones++) /*print ones place*/
+		for (n = (m + 1); n <= '9'; n++) /*one's ten+1*/
 		{
-			putchar(tens);
-			putchar(ones);
-			if (!(tens != '8' || ones != '9')) /*print commas*/
+			putchar(m);
+			putchar(n);
+
+			if (m != '8' || n != '9') /*print commas*/
 			{
 				putchar(',');
 				putchar(' ');
