@@ -8,8 +8,8 @@
 
 int main(void)
 {
-        int x;n
-        int y;m
+        int x;
+        int y;
 
         for (y = '0'; y <= '9'; y++) /*increment variable y*/
         {
