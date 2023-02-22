@@ -2,12 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *main - Entry point a program that will assign a random number to the varia
- *ble n each time it is executed
- *Return: Always 0 (Success)
+ * positive_or_negative - Entry point a program that will assign a random
+ * number to the variable n each time it is executed
+ * @i: main
+ * Return: Always 0 (Success)
  */
 void positive_or_negative(int i)
-{	
+{
 	int n;
 
 	srand(time(0));
