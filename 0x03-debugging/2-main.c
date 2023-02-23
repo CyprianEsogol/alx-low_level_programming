@@ -8,7 +8,7 @@
 int main(void)
 {
 	int a, b, c;
-	int largerst;
+	int largest;
 
 	a = 972;
 	b = -98;
@@ -16,7 +16,7 @@ int main(void)
 
 	largest = largest_number(a, b, c);
 
-	print("%d is the largest number\n", largest);
+	printf("%d is the largest number\n", largest);
 
 	return (0);
 }
