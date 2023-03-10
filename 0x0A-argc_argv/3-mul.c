@@ -38,7 +38,7 @@ int _atoi(char *s)
 	}
 	if (m == 0)
 		return (0);
-	return (n);
+	return (k);
 }
 /**
  * main - multiplies two numbers
@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 	int y;
 	int z;
 
-	if (argc != 3)
+	if (argc < 3 || argc > 3)
 	{
 		printf("Error\n");
 
