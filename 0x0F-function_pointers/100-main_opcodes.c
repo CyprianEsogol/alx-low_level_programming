@@ -24,14 +24,16 @@ int main(int x, char *y[])
 		exit(2);
 	}
 	c = (char *)main;
-	for (b = 0; b < a; b++)
+	b = 0;
+	while (b < a)
 	{
 		if (b == a - 1)
 		{
 			printf("%02hhx\n", c[b]);
 			break;
 		}
-		printf("%02hhx", c[b]);
+		printf("%02hhx ", c[b]);
+		b++;
 	}
 	return (0);
 }
