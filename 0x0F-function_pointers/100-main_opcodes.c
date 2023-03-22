@@ -24,8 +24,7 @@ int main(int x, char *y[])
 		exit(2);
 	}
 	c = (char *)main;
-	b = 0;
-	while (b < a)
+	for (b = 0; b < a; b++)
 	{
 		if (b == a - 1)
 		{
@@ -33,7 +32,6 @@ int main(int x, char *y[])
 			break;
 		}
 		printf("%02hhx", c[b]);
-		b++;
 	}
 	return (0);
 }
